@@ -68,4 +68,90 @@ That error is pretty clear, but just in case you're not sure what it means here 
 
 * We can't use key property in usage to show the property of key in our React App.
 
+#ARROW FUNCTIONS:-
+Arrow functions – also called “fat arrow” functions, from CoffeeScript (a transcompiled language) — are a more concise syntax for writing function expressions. 
+
+Before:
+hello = function() {
+  return "Hello World!";
+}
+
+With Arrow Function:
+hello = () => {
+  return "Hello World!";
+}
+
+
+* Ternary Operator:-
+
+CONDITION ? DO IF TRUE : DO IF FALSE
+
+* && in JS
+
+(EXPRESSION && EXPRESSION)
+
+#Declarative Programming:-
+Declarative programming is a programming paradigm — a style of building the structure and elements of computer programs—that expresses the logic of a computation without describing its control flow.
+
+#Imperative programming:-
+Imperative programming is a programming paradigm that uses statements that change a program's state.
+
+#Hooks:-
+
+Hooks are the functions that allow us to hook into the state of our app and read or modify it.
+
+* One of the rules for using hooks is that you must use a hook inside a functional component.
+
+useState() :- useState is a Hook (function) that allows you to have state variables in functional components. You pass the initial state to this function and it returns a variable with the current state value (not necessarily the initial state) and another function to update this value.
+
+A Hook is a special function that lets you “hook into” React features.
+
+* Destructuring of array:-
+const [] = value;
+
+* Destructuring of Object:-
+const {} = value;
+
+The names inside the destructuring of object should match with the properties of the object.
+
+Alternative way for destructuring of object
+Eg:- const {name: catName, sound:catSound} = cat;
+
+* For event handling in React we have to look for HTML events but in camelCasing
+
+Forms in React:-
+
+Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth.
+With a controlled component, the input’s value is always driven by the React state.
+A controlled component is a react component that controls the values of input elements in a form using setState().
+
+* Form component quickly refreshes the app. This is the default behavior of form components in HTML. They refresh in order to submit, make a post request or make a get request and refreshes the page.
+
+* If the button is of type="submit" in the form component then it actually triggers a method on the form called onSubmit.
+
+* event.preventDefault() is a method that basically prevents the default next behavior of the event.
+
+# Difference between Class and Hooks:-
+
+//Class
+class App extends React.Component {
+	render(){
+		return <h1>Hello</h1>
+	}
+}
+
+export default App;
+
+//Hooks
+function App(){
+	return <h1>Hello</h1>
+}
+
+export default App;
+
+* Uncontrolled Components:-
+Uncontrolled components act more like traditional HTML form elements. The data for each input element is stored in the DOM, not in the component. Instead of writing an event handler for all of your state updates, you use a ref to retrieve values from the DOM.
+
+
+
 
